@@ -1,0 +1,15 @@
+artifact_uri: file:///media/ducanh/DATA/Document_Search/mlruns/0/c88f64e1985d43dc9f5aa03cbfa49b56/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: c88f64e1985d43dc9f5aa03cbfa49b56
+run_uuid: c88f64e1985d43dc9f5aa03cbfa49b56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1665646581164
+status: 1
+tags: []
+user_id: nam

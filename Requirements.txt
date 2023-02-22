@@ -1,0 +1,14 @@
+filetype
+fitz
+frontend==0.0.3
+pip-tools
+PyMuPDF==1.19.5
+haystack==0.42
+farm-haystack==1.1.0
+ocrmypdf==13.3.0
+pytesseract
+fastapi
+uvicorn
+Cython==0.29.27
+pymilvus==1.0.1
+huggingface-hub==0.4.0

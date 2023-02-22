@@ -1,0 +1,10 @@
+application.py:1: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+Traceback (most recent call last):
+  File "application.py", line 10, in <module>
+    from controller.errors.http_error import http_error_handler
+  File "/media/ai-r-d/FaceDB1/life_project/Document_Search/controller/__init__.py", line 1, in <module>
+    from pipeline import (
+  File "/media/ai-r-d/FaceDB1/life_project/Document_Search/pipeline/custom_component.py", line 12, in <module>
+    import filetype
+ModuleNotFoundError: No module named 'filetype'

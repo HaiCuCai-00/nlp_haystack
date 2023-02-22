@@ -1,0 +1,15 @@
+artifact_uri: file:///media/ducanh/DATA/Document_Search/mlruns/0/03918787de14479b9b63b5a187a9dc0a/artifacts
+end_time: 1671617839221
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 03918787de14479b9b63b5a187a9dc0a
+run_uuid: 03918787de14479b9b63b5a187a9dc0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671617742891
+status: 3
+tags: []
+user_id: ai-r-d

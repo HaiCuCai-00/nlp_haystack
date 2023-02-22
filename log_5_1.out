@@ -1,0 +1,52 @@
+application.py:1: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+
+  from imp import reload
+WARNING - ray -  Package pickle5 becomes unnecessary in Python 3.8 and above. Its presence may confuse libraries including Ray. Please uninstall the package.
+WARNING - haystack -  Object 'Pipeline' is imported through a deprecated path. Please check out the docs for the new import path.
+pdftotext version 0.86.1
+Copyright 2005-2020 The Poppler Developers - http://poppler.freedesktop.org
+Copyright 1996-2011 Glyph & Cog, LLC
+tesseract 4.1.1
+ leptonica-1.79.0
+  libgif 5.1.4 : libjpeg 8d (libjpeg-turbo 2.0.3) : libpng 1.6.37 : libtiff 4.1.0 : zlib 1.2.11 : libwebp 0.6.1 : libopenjp2 2.3.1
+ Found AVX2
+ Found AVX
+ Found FMA
+ Found SSE
+ Found libarchive 3.4.0 zlib/1.2.11 liblzma/5.2.4 bz2lib/1.0.8 liblz4/1.9.2 libzstd/1.4.4
+/home/ai-r-d/.local/lib/python3.8/site-packages/elasticsearch/connection/base.py:190: ElasticsearchDeprecationWarning: Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security.
+  warnings.warn(message, category=ElasticsearchDeprecationWarning)
+Traceback (most recent call last):
+  File "/home/ai-r-d/.local/lib/python3.8/site-packages/haystack/pipelines/base.py", line 694, in _load_or_get_component
+    instance = BaseComponent.load_from_args(component_type=component_type, **component_params)
+  File "/home/ai-r-d/.local/lib/python3.8/site-packages/haystack/nodes/base.py", line 50, in load_from_args
+    instance = subclass(**kwargs)
+  File "/home/ai-r-d/.local/lib/python3.8/site-packages/haystack/document_stores/elasticsearch.py", line 173, in __init__
+    self._create_document_index(index)
+  File "/home/ai-r-d/.local/lib/python3.8/site-packages/haystack/document_stores/elasticsearch.py", line 264, in _create_document_index
+    raise Exception(f"The '{index_name}' index in Elasticsearch already has a field called '{self.embedding_field}'"
+Exception: The 'document' index in Elasticsearch already has a field called 'embedding' with the type 'float'. Please update the document_store to use a different name for the embedding_field parameter.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ai-r-d/.local/lib/python3.8/site-packages/haystack/pipelines/base.py", line 691, in _load_or_get_component
+    cls._load_or_get_component(name=value, definitions=definitions, components=components)
+  File "/home/ai-r-d/.local/lib/python3.8/site-packages/haystack/pipelines/base.py", line 697, in _load_or_get_component
+    raise Exception(f"Failed loading pipeline component '{name}': {e}")
+Exception: Failed loading pipeline component 'DocumentStore': The 'document' index in Elasticsearch already has a field called 'embedding' with the type 'float'. Please update the document_store to use a different name for the embedding_field parameter.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "application.py", line 11, in <module>
+    from controller.router import router as api_router
+  File "/media/ai-r-d/FaceDB1/life_project/Document_Search/controller/router.py", line 4, in <module>
+    from controller import file_upload, search
+  File "/media/ai-r-d/FaceDB1/life_project/Document_Search/controller/file_upload.py", line 48, in <module>
+    INDEXING_PIPELINE = Pipeline.load_from_yaml(
+  File "/home/ai-r-d/.local/lib/python3.8/site-packages/haystack/pipelines/base.py", line 664, in load_from_yaml
+    component = cls._load_or_get_component(name=name, definitions=definitions, components=components)
+  File "/home/ai-r-d/.local/lib/python3.8/site-packages/haystack/pipelines/base.py", line 697, in _load_or_get_component
+    raise Exception(f"Failed loading pipeline component '{name}': {e}")
+Exception: Failed loading pipeline component 'EMRetriver': Failed loading pipeline component 'DocumentStore': The 'document' index in Elasticsearch already has a field called 'embedding' with the type 'float'. Please update the document_store to use a different name for the embedding_field parameter.

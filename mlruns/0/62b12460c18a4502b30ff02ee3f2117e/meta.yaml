@@ -1,0 +1,15 @@
+artifact_uri: file:///media/ducanh/DATA/Document_Search/mlruns/0/62b12460c18a4502b30ff02ee3f2117e/artifacts
+end_time: 1664530799421
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 62b12460c18a4502b30ff02ee3f2117e
+run_uuid: 62b12460c18a4502b30ff02ee3f2117e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1664530672115
+status: 3
+tags: []
+user_id: lifetek
